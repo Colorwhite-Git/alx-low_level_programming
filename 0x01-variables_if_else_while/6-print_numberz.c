@@ -1,9 +1,8 @@
 #include <stdio.h>
 
 /**
- *main = output prints single numbers of base 10
- *start from 0 with new line following
- *Use putchar function*
+ *main - output prints single numbers of base 10
+ *Description start from 0 with new line following
  * Return: Always 0.
  */
 int main(void)
