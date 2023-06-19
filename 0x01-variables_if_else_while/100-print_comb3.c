@@ -1,37 +1,36 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- * main - main block function
- * Description: Print all possible combinations
+ * main - Entry point function
+ * Description: Print all possible different combinations
  * The two digits must be different
+ * Used only 'putchar' five times at maximum
  * Print in ascending order with two digits
- * Used only 'putchar' function (5 times)
- * No use of any variable type 'char'
  * Return: 0
- */
+*/
+
 int main(void)
 {
-	int x, y;
+	int digit1 = 0, digit2;
 
-	for (x = 48; x < 58; x++)
+	while (digit1 <= 9)
 	{
-		for (y = 49; y < 58; y++)
+		digit2 = 0;
+		while (digit2 <= 9)
 		{
-			if (y > x)
+			if (digit1 != digit2 && digit1 < digit2)
 			{
-				putchar(x);
-				putchar(y);
-				if (x < 56 || y < 57)
+				putchar(digit1 + 48);
+				putchar(digit2 + 48);
+
+				if (digit1 + digit2 != 17)
 				{
-					putchar(x);
-					putchar(y);
-					if (x < 56 || y < 57)
-					{
-						putchar(44);
-						putchar(32);
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
+			++digit2;
 		}
+		++digit1;
 	}
 	putchar('\n');
 	return (0);
