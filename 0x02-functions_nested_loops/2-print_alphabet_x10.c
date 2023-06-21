@@ -1,7 +1,7 @@
 #include"main.h"
 /**
- * print_alphabet_x10 - function prints alphabets on from a-z on 10 lines
- *
+ * print_alphabet_x10 - Prints alphabets a-z on 10 times
+ * Return: void
  */
 void print_alphabet_x10(void)
 {
