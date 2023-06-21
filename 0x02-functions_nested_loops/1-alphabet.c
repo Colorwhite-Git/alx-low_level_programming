@@ -3,16 +3,16 @@
 /**
  * print_alphabet - order from a to z
  *
- *Return: x
+ *Return: void
  */
 
 void print_alphabet(void)
 {
-	char x;
+	char al;
 
-	for (x = 'a'; x <= 'z'; x++)
+	for (al = 'a'; al <= 'z'; al++)
 	{
-		_putchar(x);
+		_putchar(al);
 	}
 	_putchar('\n');
 
