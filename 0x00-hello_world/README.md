@@ -2,18 +2,14 @@
 
 C Programming Basics
 
-This repository contains a collection of basic C programming tasks and concepts. Whether you are a beginner learning C or an experienced programmer looking to refresh your knowledge, this guide will provide you with a solid foundation in C programming.
+This repository contains a collection of basic C programming tasks and concepts. This guide will provide you with a solid foundation in C programming.
 
 Table of Contents
-0-processor
-Prerequisites
-Compiling and Running
-Contents
-Contributing
-License
+*The Compiler* - This code write a script that compiles a C file but it does not link. 
 
-Getting Started
-To get started with C programming basics, follow these steps:
+A compiler is a software tool that translates source code written in a high-level programming language into a lower-level representation or machine code that can be directly executed by a computer
+
+
 
 Clone the repository to your local machine using the following command:
 
