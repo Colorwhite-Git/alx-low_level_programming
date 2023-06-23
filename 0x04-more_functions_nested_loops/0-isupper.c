@@ -2,10 +2,8 @@
 
 /**
  * _isupper - Entry point
- * Description: Checks for upper case character
  * @c: int type number
- * Return (1) if c is uppercase
- * Return (0) otherwise
+ * Return: (1) if c is uppercase & (0) otherwise
  */
 
 int _isupper(int c)
