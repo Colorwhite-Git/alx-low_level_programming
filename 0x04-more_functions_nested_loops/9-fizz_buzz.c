@@ -1,12 +1,9 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
  * main - main entry point
  * Print numbers from 0 to 100
  * Description: For multiples of three, Print 'Fizz'
- * instead of the number
- * For multiples of five print 'Buzz'.
  * Print 'FizzBuzz' for numbers whic are  multiples of both 3 & 5
  * Return: Always 0
  */
