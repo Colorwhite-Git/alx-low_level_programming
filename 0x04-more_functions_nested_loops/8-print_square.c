@@ -3,12 +3,12 @@
 /**
  * print_square - print a square
  * @size: size of square
- * Description: Can only use _putchar to print. Use '#' to print square.
+ * Description: Use only  _putchar to print & '#' to print square.
  */
 
 void print_square(int size)
 {
-	int x, y;
+	int a, y;
 
 	y = 0;
 
@@ -17,11 +17,11 @@ void print_square(int size)
 
 	while (y < size)
 	{
-		x = 0;
-		while (x < size)
+		a = 0;
+		while (a < size)
 		{
 			_putchar('#');
-			x++;
+			a++;
 		}
 		_putchar('\n');
 		y++;
