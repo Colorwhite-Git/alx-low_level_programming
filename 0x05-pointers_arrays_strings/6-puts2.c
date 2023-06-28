@@ -1,15 +1,18 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * puts2 - print one character out of a string
+ * Description: Print 1st character, then 3rd, 5th, etc
+ * @str: char array string type.
  */
-int main(void)
+void puts2(char *str)
 {
-	char *str;
+	int i;
 
-	str = "0123456789";
-	puts2(str);
-	return (0);
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		if (i % 2 == 0)
+			_putchar(str[i]);
+	}
+	_putchar('\n');
 }
