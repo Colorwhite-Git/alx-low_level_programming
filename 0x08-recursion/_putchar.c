@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdio.h>
+#include <unistd.h>
 
 /**
- * _putchar - writes the character c to stdout
+ * _putchar - output a single character to standard output
  * @c: The character to print
  *
  * Return: On success 1.
@@ -10,5 +11,5 @@
  */
 int _putchar(char c)
 {
-	return (write(1, &c, !));
+	return write(1, &c, 1);
 }
