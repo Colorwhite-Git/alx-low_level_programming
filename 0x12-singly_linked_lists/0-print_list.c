@@ -1,35 +1,25 @@
-#include <stdlib.h>
-#include <string.h>
 #include "lists.h"
+#include <stdio.h>
 
 /**
- * add_node - Entry point to add a new node at the beginning of a list_t list.
- * @head: Pointer to head of the linked list.
- * @str: String to be duplicated and added to the new node.
- *
- * Return: The address of the new element, or NULL if it failed.
+ * print_list - prints all the elements of a list_t
+ * @h: pointer to the list_t list to print
+ * Return: the number of nodes printed
  */
-list_t *add_node(list_t **head, const char *str)
+
+size_t print_list(const list_t *h)
 {
-	if (str == NULL)
-		return (NULL);
+	size_t s = 0;
 
-	list_t *new_node = malloc(sizeof(list_t));
-
-	if (new_node == NULL)
-		return (NULL);
-
-	new_node->str = strdup(str);
-	if (new_node->str == NULL)
+	while (h)
 	{
-		free(new_node);
-		return (NULL);
+		if (!h->str)
+			printf("[0] (nil)\n");
+		else
+			printf("[%u] %s\n", h->len, h->str);
+		h = h->next;
+		s++;
 	}
-	new_node->len = strlen(str);
 
-	new_node->next = *head;
-
-	*head = new_node;
-
-	return (new_node);
+	return (s);
 }
