@@ -8,6 +8,7 @@
  * @n: first number
  *
  * @m: second number
+ *
  * Return: number of bits to change
  */
 
